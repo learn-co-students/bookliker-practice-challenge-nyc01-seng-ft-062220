@@ -62,8 +62,8 @@ const bookHandler = () => {
             showPanel.append(ul) //append the ul list onto the show panel
             const button = document.createElement("button") 
             button.type = "button"
-            const test = selectBook.users.find(user1 => user1.username == "pouros")
-            test === undefined ? button.innerText = "LIKE" : button.innerText = "UNLIKE"
+            const currentUser = selectBook.users.find(user1 => user1.username == "pouros")
+            currentUser === undefined ? button.innerText = "LIKE" : button.innerText = "UNLIKE"
             showPanel.append(button) //append button to the show Panel
 
         }
